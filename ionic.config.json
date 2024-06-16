@@ -1,0 +1,7 @@
+{
+  "name": "API-Connect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
