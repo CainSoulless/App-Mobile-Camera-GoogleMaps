@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'geolocalization',
+    loadChildren: () => import('./geolocalization/geolocalization.module').then( m => m.GeolocalizationPageModule)
+  },
 ];
 
 @NgModule({
